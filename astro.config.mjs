@@ -10,7 +10,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'r-dvl | Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/r-dvl/documentation' }],
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/r-dvl/docs' }],
 			sidebar: [
 				{
 					label: 'Guides',
