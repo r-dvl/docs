@@ -10,19 +10,15 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'r-dvl | Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/r-dvl/docs' }],
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/r-dvl/' }],
 			sidebar: [
-				{
-					label: 'Guides',
-					autogenerate: { directory: 'guides' },
-				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
-				},
 				{
 					label: 'General',
 					autogenerate: { directory: 'general' },
+				},
+				{
+					label: 'IT Knowledge Base',
+					autogenerate: { directory: 'it-knowledge-base' },
 				},
 			],
 		}),

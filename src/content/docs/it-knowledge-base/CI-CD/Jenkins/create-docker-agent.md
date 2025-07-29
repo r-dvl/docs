@@ -1,13 +1,10 @@
 ---
-title: Create Jenkins Agent
+title: Create Jenkins Docker Agent
 description: How to create Jenkins agents with Docker.
 ---
 
-# Create Jenkins Agent
----
 Guide written at 02:00 AM and a coffee to create new Agents in Jenkins.
 
-> [!info]
 > Official Documentation: [Document](https://www.jenkins.io/doc/book/using/using-agents/)
 
 
@@ -36,7 +33,6 @@ This will generate these keys in `/home/$USER/.ssh` with name `jenkins_agent_key
 
 ## Create Docker Agent
 ---
-> [!info]
 > Official docker image repository: [Jenkins SSH Agent](https://github.com/jenkinsci/docker-ssh-agent)
 
 Run the Agent:
@@ -49,7 +45,6 @@ jenkins/ssh-agent:alpine-jdk17
 
 Where `[your-public-key]` is your public key without brackets.
 
-> [!tip]
 > [your-public-key] is the value of the `.pub` key, get the value with `cat ~/.ssh/jenkins_agent_key.pub`.
 > If port 22 is being used in Server, use other one `-p 4444:22`.
 
@@ -77,7 +72,6 @@ RUN apt-get install -y ansible python3 python3-pip nodejs npm
     - Credentials; (e.g.: jenkins )
     - Host Key verification Strategy; (e.g.: Manually trusted key verification …​ )
 
-> [!tip]
 > If `Manually trusted key verification` is selected, you will have to trust that new host.
 
 
@@ -102,6 +96,3 @@ def call() {
     }
 }
 ```
-
-
-TAG: #Dev #Jenkins
