@@ -1,0 +1,26 @@
+---
+title: Hi! 👋
+description: This is my personal documentation vault, hope you find something interesting!
+template: splash
+hero:
+  tagline: This is my personal documentation vault, hope you find something interesting!
+  image:
+    file: ../../assets/houston.webp
+  actions:
+    - text: Guides
+      link: /docs/general/how-to-guides/
+      icon: right-arrow
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Maybe you are trying to find..
+
+<CardGrid stagger>
+	<Card title="Portfolio" icon="pencil">
+		You can find my career information and projects in my <a href="https://r-dvl.github.io/portfolio/">portfolio</a>.
+	</Card>
+	<Card title="Blog" icon="add-document">
+		Sometimes I write about things I find interesting in my <a href="https://r-dvl.github.io/blog/">blog</a>.
+	</Card>
+</CardGrid>
