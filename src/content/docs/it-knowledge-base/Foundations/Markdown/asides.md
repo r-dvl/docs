@@ -11,6 +11,10 @@ Lorem ipsum dolor sit amet
 Lorem ipsum dolor sit amet
 :::
 
+:::caution  
+Lorem ipsum dolor sit amet
+:::
+
 :::danger  
 Lorem ipsum dolor sit amet
 :::

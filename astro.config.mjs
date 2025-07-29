@@ -19,6 +19,7 @@ export default defineConfig({
 				{
 					label: 'IT Knowledge Base',
 					autogenerate: { directory: 'it-knowledge-base' },
+					collapsed: true,
 				},
 			],
 		}),
