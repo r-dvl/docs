@@ -17,9 +17,8 @@ export default defineConfig({
 					autogenerate: { directory: 'general' },
 				},
 				{
-					label: 'IT Knowledge Base',
-					autogenerate: { directory: 'it-knowledge-base' },
-					collapsed: true,
+					label: 'Projects',
+					autogenerate: { directory: 'projects' },
 				},
 			],
 		}),
